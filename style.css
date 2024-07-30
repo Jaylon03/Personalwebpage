@@ -1,0 +1,294 @@
+* {
+    margin-left: 0;
+    margin-top: 0;
+    
+  }
+  
+
+
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.column{
+    flex: 1;
+}
+
+.left{
+    text-align: center;
+
+}
+
+
+.right{
+
+    border-left: solid;
+    border-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.image-container {
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .column.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .centered-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .learn-more{
+    background-color: #ffff; 
+    border-radius: 15px;
+    border-width: 1.5px;
+    padding: 15px;
+    margin-top: 50px;
+    width: 125px;
+  }
+  .about-me-container{
+    height: 150px;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #a09e9e;
+    border-width: 0.7px;
+  
+    
+  
+  }
+
+ .about{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+ }
+
+ .spotlight-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: solid;
+  border-color: #a09e9e;
+  border-width: 0.5px;
+  overflow: hidden;
+  min-height: 400px; /* Prevent image overflow */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.spt-img1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0; /* Ensure it stretches to the bottom of the container */
+  width: auto;
+  max-width: 30%;
+  display: flex; /* Use flex to center the image vertically */
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Maintain aspect ratio and fit within the container */
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-right: 30%;
+  z-index: 1;
+ /* Create space for the absolute positioned image */
+}
+
+.resume-button{
+  color: #050505;
+  text-decoration-line: none;
+  border-color: black;
+  border: solid;
+  
+ 
+  border-radius: 15px;
+  border-width: 1.5px;
+  padding: 15px;
+  margin-top: 40px;
+  width: 125px;
+  margin-left: 50px;
+}
+.hobby-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: solid;
+  border-color: #8a8888;
+  border-width: 0.7px;
+  overflow: hidden;
+  min-height: 400px; /* Prevent image overflow */
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.hobby-content{
+  margin-left: 50px;
+}
+.showcase-container {
+  height: auto;
+  min-height: 200px;
+  border-bottom: solid;
+  border-color: #a09e9e;
+  border-width: 0.7px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to next line */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: flex-start;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  padding: 0; /* Remove padding */
+}
+
+.image-block {
+  flex: 0 0 auto; /* Don't grow or shrink, stay at base size */
+  width: 400px; /* Set width to match your image width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  color: #050505;
+  padding: 5px 0;
+  top: 0;
+  left: 0;
+  position:absolute;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.image-block {
+  position: relative;
+  display: inline-block;
+}
+
+.image-block .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+}
+
+.image-block:hover .caption {
+  opacity: 1;
+}
+
+.skills-container{
+  height: 100px;
+  border-top: solid;
+  border-color: #a09e9e;
+  border-width: 0.7px;
+
+
+}
+
+.skills{
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 500px;
+  padding: 10px;
+  margin: 150px;
+}
+
+.grid-item {
+  border-bottom: 1px solid rgba(163, 163, 163, 0.8);
+  border-right: 1px solid rgba(130, 130, 130, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  height: 300px; /* Increase this value to make containers taller */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-item img{
+
+  border-radius: 50px ;
+  margin-bottom: 50px;
+}
+
+/* Remove bottom border for last row */
+.grid-item:nth-last-child(-n+3) {
+  border-bottom: none;
+}
+
+/* Remove right border for last column */
+.grid-item:nth-child(3n) {
+  border-right: none;
+}
+
+/* Remove top border from first row */
+.grid-item:nth-child(-n+3) {
+  border-top: none;
+}
+
+/* Remove left border from first column */
+.grid-item:nth-child(3n+1) {
+  border-left: none;
+}
+
